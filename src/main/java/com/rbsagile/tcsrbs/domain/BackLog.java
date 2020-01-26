@@ -9,9 +9,9 @@ import javax.persistence.Id;
 @Entity
 public class BackLog {
     @Id
-    @GeneratedValue(Strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
-    private Integer PTsequence =0;
+    private Integer PTSequence =0;
     private String empId;
 
     public BackLog() {
@@ -25,12 +25,12 @@ public class BackLog {
         Id = id;
     }
 
-    public Integer getPTsequence() {
-        return PTsequence;
+    public Integer getPTSequence() {
+        return PTSequence;
     }
 
-    public void setPTsequence(Integer PTsequence) {
-        this.PTsequence = PTsequence;
+    public void setPTSequence(Integer PTSequence) {
+        this.PTSequence = PTSequence;
     }
 
     public String getEmpId() {
